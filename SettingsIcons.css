@@ -1,0 +1,648 @@
+:root {
+	--settingsicons_v: var(--settingsicons_s, var(--settingsicons, 1));
+	--use-settingsicons: calc(var(--settingsicons_v) / (var(--settingsicons_v) + 0.00000000000000000000001));
+	--settingsicons-size: 18px;
+	--settingsicons-gap: 14px;
+	
+	--settingsicons-default: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/questionmark.png);
+	--settingsicons-myaccount: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/account.png);
+	--settingsicons-profile: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/profile.png);
+	--settingsicons-privacy: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/privacy.png);
+	--settingsicons-family: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/family.png);
+	--settingsicons-apps: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/apps.png);
+	--settingsicons-sessions: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/sessions.png);
+	--settingsicons-connections: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/connections.png);
+	--settingsicons-clips: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/clips.png);
+	--settingsicons-friendrequests: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/friendrequests.png);
+	--settingsicons-nitro: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/nitro.png);
+	--settingsicons-boosts: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/boosts.png);
+	--settingsicons-subscriptions: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/subscriptions.png);
+	--settingsicons-gifts: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/gift.png);
+	--settingsicons-billing: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/billing.png);
+	--settingsicons-appearance: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/appearance.png);
+	--settingsicons-accessibility: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/accessibility.png);
+	--settingsicons-voice: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/voice.png);
+	--settingsicons-powermode: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/party.png);
+	--settingsicons-text: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/text.png);
+	--settingsicons-notifications: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/notifications.png);
+	--settingsicons-keybinds: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/keybinds.png);
+	--settingsicons-language: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/language.png);
+	--settingsicons-windows: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/windows.png);
+	--settingsicons-linux: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/linux.png);
+	--settingsicons-streamermode: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/streamermode.png);
+	--settingsicons-advanced: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/advanced.png);
+	--settingsicons-activityprivacy: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/activityprivacy.png);
+	--settingsicons-games: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/games.png);
+	--settingsicons-overlay: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/overlay.png);
+	--settingsicons-bd-settings: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/settings.png);
+	--settingsicons-bd-updates: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/updates.png);
+	--settingsicons-bd-customcss: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/customcss.png);
+	--settingsicons-bd-plugins: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/plugins.png);
+	--settingsicons-bd-themes: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/themes.png);
+	--settingsicons-vc-cloud: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/cloud.png);
+	--settingsicons-vc-backup-restore: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/backuprestore.png);
+	--settingsicons-bd-pluginrepo: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/pluginrepo.png);
+	--settingsicons-bd-themerepo: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/themerepo.png);
+	--settingsicons-changelog: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/changelog.png);
+	--settingsicons-merchandise: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/merchandise.png);
+	--settingsicons-hypesquad: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/hypesquad.png);
+	--settingsicons-experiments: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/experiments.png);
+	--settingsicons-developer: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/developer.png);
+	--settingsicons-hotspots: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/hotspots.png);
+	--settingsicons-dismissable: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/dismissable.png);
+	--settingsicons-paymentmodals: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/paymentmodals.png);
+	--settingsicons-designsystem: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/designsystem.png);
+	--settingsicons-textplayground: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/textplayground.png);
+	--settingsicons-textcomponent: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/textcomponent.png);
+	--settingsicons-profilepreview: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/profilepreview.png);
+	--settingsicons-logout: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/logout.png);
+}
+
+body #app-mount .sidebarRegion_c25c6d:has(.socialLinks_c44e94) {
+	flex-basis: calc(218px + (var(--use-settingsicons) * (var(--settingsicons-size) + var(--settingsicons-gap)))) !important;
+}
+body #app-mount .sidebar_c25c6d:has(.socialLinks_c44e94),
+body #app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .sidebar_c25c6d:has(.socialLinks_c44e94) {
+	width: calc(218px + (var(--use-settingsicons) * (var(--settingsicons-size) + var(--settingsicons-gap)))) !important;
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0 {
+	--settingsicons-icon: var(--settingsicons-default);
+	display: flex;
+	align-items: center;
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0 > div {
+	flex: 1 1 auto;
+}
+
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0::before,
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0::after {
+	content: "";
+	flex: 0 0 auto;
+	width: calc(var(--use-settingsicons) * var(--settingsicons-size));
+	height: calc(var(--use-settingsicons) * var(--settingsicons-size));
+	margin-right: calc(var(--use-settingsicons) * var(--settingsicons-size)/2);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0::before {
+	background: currentColor;
+	z-index: 2;
+	-webkit-mask: var(--settingsicons-icon) center/contain no-repeat;
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0::after {
+	position: absolute;
+	z-index: 1;
+	background: var(--settingsicons-icon) center/contain no-repeat;
+}
+
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(2),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(10),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="my-account-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="my-account-tab" i] {
+	--settingsicons-icon: var(--settingsicons-myaccount);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(3),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(11),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="profile-customization-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="profile-customization-tab" i] {
+	--settingsicons-icon: var(--settingsicons-profile);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(4),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(12),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="privacy-&-safety-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="privacy-&-safety-tab" i] {
+	--settingsicons-icon: var(--settingsicons-privacy);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(5),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(13),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="family-center-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="family-center-tab" i] {
+	--settingsicons-icon: var(--settingsicons-family);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(6),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(14),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="authorized-apps-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="authorized-apps-tab" i] {
+	--settingsicons-icon: var(--settingsicons-apps);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(7),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(15),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="sessions-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="sessions-tab" i] {
+	--settingsicons-icon: var(--settingsicons-sessions);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(8),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(16),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="connections-tab" i],
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="passport-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="connections-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="passport-tab" i] {
+	--settingsicons-icon: var(--settingsicons-connections);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(9),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(17),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="settings-clips-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="settings-clips-tab" i] {
+	--settingsicons-icon: var(--settingsicons-clips);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(10),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(18),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="friend-requests-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="friend-requests-tab" i] {
+	--settingsicons-icon: var(--settingsicons-friendrequests);
+}
+
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(13),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(21),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="discord-nitro-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="discord-nitro-tab" i] {
+	--settingsicons-icon: var(--settingsicons-nitro);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(14),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(22),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="nitro-server-boost-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="nitro-server-boost-tab" i] {
+	--settingsicons-icon: var(--settingsicons-boosts);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(15),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(23),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="subscriptions-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="subscriptions-tab" i] {
+	--settingsicons-icon: var(--settingsicons-subscriptions);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(16),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(24),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="library-inventory-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="library-inventory-tab" i] {
+	--settingsicons-icon: var(--settingsicons-gifts);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(17),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(25),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="billing-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="billing-tab" i] {
+	--settingsicons-icon: var(--settingsicons-billing);
+}
+
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(20),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(28),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="appearance-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="appearance-tab" i] {
+	--settingsicons-icon: var(--settingsicons-appearance);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(21),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(29),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="accessibility-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="accessibility-tab" i] {
+	--settingsicons-icon: var(--settingsicons-accessibility);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(22),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(30),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="voice-&-video-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="voice-&-video-tab" i] {
+	--settingsicons-icon: var(--settingsicons-voice);
+}
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="powermode-settings-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="powermode-settings-tab" i] {
+	--settingsicons-icon: var(--settingsicons-powermode);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(23),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(31),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="text-&-images-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="text-&-images-tab" i] {
+	--settingsicons-icon: var(--settingsicons-text);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(24),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(32),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="notifications-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="notifications-tab" i] {
+	--settingsicons-icon: var(--settingsicons-notifications);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(25),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(33),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="keybinds-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="keybinds-tab" i] {
+	--settingsicons-icon: var(--settingsicons-keybinds);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(26),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(34),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="language-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="language-tab" i] {
+	--settingsicons-icon: var(--settingsicons-language);
+}
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(27),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(35),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="windows-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="windows-tab" i] {
+	--settingsicons-icon: var(--settingsicons-windows);
+}
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(27),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(35),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="linux-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="linux-tab" i] {
+	--settingsicons-icon: var(--settingsicons-linux);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(27),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(28),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(28),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(36),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .item_a0.vc-settings ~ side_a0 .item_a0:nth-child(37),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .item_a0.vc-settings ~ .side_a0 .item_a0:nth-child(37),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="streamer-mode-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="streamer-mode-tab" i] {
+	--settingsicons-icon: var(--settingsicons-streamermode);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(28),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(29),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(29),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(37),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .item_a0.vc-settings ~ side_a0 .item_a0:nth-child(38),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .item_a0.vc-settings ~ .side_a0 .item_a0:nth-child(38),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="advanced-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="advanced-tab" i] {
+	--settingsicons-icon: var(--settingsicons-advanced);
+}
+
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(31),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(32),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(32),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(39),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(40),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(40),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="activity-privacy-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="activity-privacy-tab" i] {
+	--settingsicons-icon: var(--settingsicons-activityprivacy);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(32),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(33),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(33),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(40),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(41),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(41),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="game-activity-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="game-activity-tab" i] {
+	--settingsicons-icon: var(--settingsicons-games);
+}
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(34),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(42),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="overlay-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="overlay-tab" i] {
+	--settingsicons-icon: var(--settingsicons-overlay);
+}
+
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.bd-settings-tab,
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings,
+#app-mount .standardSidebarView_c25c6d:has(.bd-settings-tab[aria-selected="true"]) .contentColumn_c25c6d,
+#app-mount .standardSidebarView_c25c6d:has(.vc-settings[aria-selected="true"]) .contentColumn_c25c6d {
+	--settingsicons-icon: var(--settingsicons-bd-settings) !important;
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.bd-updates-tab,
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-updater,
+#app-mount .standardSidebarView_c25c6d:has(.bd-updates-tab[aria-selected="true"]) .contentColumn_c25c6d,
+#app-mount .standardSidebarView_c25c6d:has(.bd-updater[aria-selected="true"]) .contentColumn_c25c6d {
+	--settingsicons-icon: var(--settingsicons-bd-updates) !important;
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.bd-customcss-tab,
+#app-mount .standardSidebarView_c25c6d:has(.bd-customcss-tab[aria-selected="true"]) .contentColumn_c25c6d {
+	--settingsicons-icon: var(--settingsicons-bd-customcss) !important;
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.bd-plugins-tab,
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-plugins ,
+#app-mount .standardSidebarView_c25c6d:has(.bd-plugins-tab[aria-selected="true"]) .contentColumn_c25c6d,
+#app-mount .standardSidebarView_c25c6d:has(.vc-plugins[aria-selected="true"]) .contentColumn_c25c6d{
+	--settingsicons-icon: var(--settingsicons-bd-plugins) !important;
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.bd-themes-tab,
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-themes,
+#app-mount .standardSidebarView_c25c6d:has(.bd-themes-tab[aria-selected="true"]) .contentColumn_c25c6d,
+#app-mount .standardSidebarView_c25c6d:has(.vc-themes[aria-selected="true"]) .contentColumn_c25c6d {
+	--settingsicons-icon: var(--settingsicons-bd-themes) !important;
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-cloud,
+#app-mount .standardSidebarView_c25c6d:has(.vc-cloud[aria-selected="true"]) .contentColumn_c25c6d {
+	--settingsicons-icon: var(--settingsicons-vc-cloud) !important;
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-backup-restore,
+#app-mount .standardSidebarView_c25c6d:has(.vc-backup-restore[aria-selected="true"]) .contentColumn_c25c6d {
+	--settingsicons-icon: var(--settingsicons-vc-backup-restore) !important;
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab,
+#app-mount .standardSidebarView_c25c6d:has(.pluginrepo-tab[aria-selected="true"]) .contentColumnDefault_c25c6d {
+	--settingsicons-icon: var(--settingsicons-bd-pluginrepo) !important;
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab,
+#app-mount .standardSidebarView_c25c6d:has(.themerepo-tab[aria-selected="true"]) .contentColumnDefault_c25c6d {
+	--settingsicons-icon: var(--settingsicons-bd-themerepo) !important;
+}
+
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(41),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(42),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(42),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(43),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(42),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(43),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(44),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(44),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(45),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(44),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(43),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(44),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(44),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(45),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(44),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="changelog-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="changelog-tab" i] {
+	--settingsicons-icon: var(--settingsicons-changelog);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(42),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(43),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(43),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(44),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(43),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(44),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(45),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(45),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(46),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(45),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(44),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(45),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(45),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(46),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(45),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="merchandise-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="merchandise-tab" i] {
+	--settingsicons-icon: var(--settingsicons-merchandise);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(43),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(44),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(44),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(45),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(44),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(45),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(46),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(46),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(47),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(46),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(45),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(46),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(46),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(47),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(46),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="hypesquad-online-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="hypesquad-online-tab" i] {
+	--settingsicons-icon: var(--settingsicons-hypesquad);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(44),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(45),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(45),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(46),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(45),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(46),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(47),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(47),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(48),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(47),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(46),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(47),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(47),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(48),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(47),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="experiments-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="experiments-tab" i] {
+	--settingsicons-icon: var(--settingsicons-experiments);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(45),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(46),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(46),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(47),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(46),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(47),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(48),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(48),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(49),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(48),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(47),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(48),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(48),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(49),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(48),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="developer-options-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="developer-options-tab" i] {
+	--settingsicons-icon: var(--settingsicons-developer);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(46),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(47),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(47),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(48),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(47),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(48),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(49),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(49),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(50),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(49),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(48),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(49),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(49),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(50),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(49),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="hotspot-options-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="hotspot-options-tab" i] {
+	--settingsicons-icon: var(--settingsicons-hotspots);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(47),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(48),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(48),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(49),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(48),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(49),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(50),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(50),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(51),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(50),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(49),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(50),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(50),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(51),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(50),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="dismissible-content-options-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="dismissible-content-options-tab" i] {
+	--settingsicons-icon: var(--settingsicons-dismissable);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(48),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(49),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(49),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(50),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(49),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(50),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(51),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(51),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(52),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(51),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(50),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(51),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(51),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(52),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(51),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="payment-flow-modals-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="payment-flow-modals-tab" i] {
+	--settingsicons-icon: var(--settingsicons-paymentmodals);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(49),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(50),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(50),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(51),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(50),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(51),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(52),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(52),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(53),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(52),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(51),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(52),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(52),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(53),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(52),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="design-system-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="design-system-tab" i] {
+	--settingsicons-icon: var(--settingsicons-designsystem);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(50),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(51),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(51),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(52),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(51),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(52),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(53),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(53),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(54),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(53),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(52),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(53),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(53),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(54),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(53),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="text-playground-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="text-playground-tab" i] {
+	--settingsicons-icon: var(--settingsicons-textplayground);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(51),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(52),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(52),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(53),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(52),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(53),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(54),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(54),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(55),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(54),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(53),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(54),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(54),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(55),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(54),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="text-component-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="text-component-tab" i] {
+	--settingsicons-icon: var(--settingsicons-textcomponent);
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(52),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(53),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(53),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(54),
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(53),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(54),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(55),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(55),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(56),
+.platform-win .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(55),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-child(54),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0:nth-child(55),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.themerepo-tab ~ .item_a0:nth-child(55),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.pluginrepo-tab ~ .item_a0.themerepo-tab ~ .item_a0:nth-child(56),
+.platform-linux .sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0.vc-settings ~ .item_a0:nth-child(55),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="profile-effects-preview-tool-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="profile-effects-preview-tool-tab" i] {
+	--settingsicons-icon: var(--settingsicons-profilepreview);
+}
+
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .item_a0:nth-last-child(4),
+#app-mount .sidebar_c25c6d .side_a0 .item_a0[aria-controls="logout-tab" i],
+#app-mount .standardSidebarView_c25c6d .contentColumn_c25c6d[id="logout-tab" i] {
+	--settingsicons-icon: var(--settingsicons-logout) !important;
+}
+
+.bd-server-search ~ .item_a0::before {
+	display: none;
+}
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .premiumLabel_ae3c77 > svg,
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .premiumLabel_ae3c77 img,
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .tabBarItemContainer_e7c031 > svg,
+.sidebar_c25c6d:has(.socialLinks_c44e94) .side_a0 .tabBarItemContainer_e7c031 img {
+	transform: scaleX(calc(1 - var(--use-settingsicons)));
+}
+
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) div:first-child > div:first-child > .sectionTitle_a6ae9b:first-child .title_c46f6a,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) div:first-child > div:first-child > h2.title_c46f6a,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) div:first-child > .sectionTitle_a206c7,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d.repoHeader_2KfNvH .title_c46f6a,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) > h2:first-child,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnWide_c25c6d:not(.repoScroller_9JnAPs) > h2:first-child {
+	display: flex;
+	align-items: center;
+}
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) .bd-settings-title {
+	justify-content: flex-start;
+}
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) .bd-settings-title > *:last-child {
+	margin-left: auto;
+}
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) > .settingsTabBar_f62afd:first-child,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) > *:first-child > .settingsTabBar_d576e9 {
+	margin-left: calc(var(--use-settingsicons) * 30px);
+}
+.standardSidebarView_c25c6d .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs),
+.standardSidebarView_c25c6d .contentColumnWide_c25c6d:not(.repoScroller_9JnAPs) {
+	--settingsicons-icon: var(--settingsicons-default);
+}
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) div:first-child > div:first-child > .sectionTitle_a6ae9b:first-child .title_c46f6a::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) div:first-child > div:first-child > h2.title_c46f6a::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) div:first-child > .sectionTitle_a206c7::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d.repoHeader_2KfNvH .title_c46f6a::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) > h2:first-child::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnWide_c25c6d:not(.repoScroller_9JnAPs) > h2:first-child::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) > .settingsTabBar_f62afd:first-child::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) > *:first-child > .settingsTabBar_d576e9::before {
+	content: "";
+	display: inline;
+	position: relative;
+	flex: 0 0 auto;
+	width: calc(var(--use-settingsicons) * 18px);
+	height: calc(var(--use-settingsicons) * 18px);
+	margin-right: calc(var(--use-settingsicons) * 8px);
+	left: 0;
+	background: currentColor;
+	z-index: 2;
+	-webkit-mask: var(--settingsicons-icon) center/contain no-repeat;
+}
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) > .settingsTabBar_f62afd:first-child::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) > *:first-child > .settingsTabBar_d576e9::before {
+	position: absolute;
+}
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) > .settingsTabBar_f62afd:first-child::before {
+	left: 40px;
+}
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) .settingsTabBar_f62afd ~ * h2::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) .settingsTabBar_d576e9 ~ * h2::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) .settingsTabBar_f62afd ~ * .title_c46f6a::before,
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) .settingsTabBar_d576e9 ~ * .title_c46f6a::before {
+	display: none !important;
+}
+
+.standardSidebarView_c25c6d:has(.socialLinks_c44e94) .contentColumnDefault_c25c6d:not(.repoScroller_9JnAPs) .title_c46f6a .lockIcon_edf4d6 {
+	width: calc((1 - var(--use-settingsicons)) * 24px);
+	margin-right: calc((1 - var(--use-settingsicons)) * 8px);
+}
+
+#BDFDB-card svg path[d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"],
+#ZeresPluginLibrary-card svg path[d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"] {
+	d: path("m 6.375,0.75 c -0.3886406,0 -0.703125,0.3144844 -0.703125,0.703125 v 14.0625 c 0,0.388641 0.3144844,0.703125 0.703125,0.703125 3.252375,0 4.608656,1.798453 4.921875,2.296875 V 2.3886719 C 10.323656,1.5753438 8.760938,0.75 6.375,0.75 Z M 3.5625,2.15625 c -0.3886406,0 -0.703125,0.3144844 -0.703125,0.703125 v 15.46875 c 0,0.388641 0.3144844,0.703125 0.703125,0.703125 H 9.929688 C 9.535891,18.553922 8.503875,17.625 6.375,17.625 5.2118437,17.625 4.265625,16.678781 4.265625,15.515625 V 2.15625 Z m 11.25,0 c -0.794437,0 -1.519969,0.2745469 -2.109375,0.7207031 V 19.734375 c 0,-0.387938 0.315188,-0.703125 0.703125,-0.703125 h 7.03125 c 0.388641,0 0.703125,-0.314484 0.703125,-0.703125 V 2.859375 c 0,-0.3886406 -0.314484,-0.703125 -0.703125,-0.703125 z M 0.703125,3.5625 C 0.3144844,3.5625 0,3.8769844 0,4.265625 v 16.875 c 0,0.388641 0.3144844,0.703125 0.703125,0.703125 H 8.605469 C 8.895906,22.662234 9.677063,23.25 10.59375,23.25 h 2.8125 c 0.916687,0 1.697797,-0.587766 1.988281,-1.40625 h 7.902344 C 23.685516,21.84375 24,21.529266 24,21.140625 v -16.875 C 24,3.8769844 23.685516,3.5625 23.296875,3.5625 H 22.59375 v 14.765625 c 0,1.163156 -0.993094,2.109375 -2.15625,2.109375 H 13.988281 C 13.697844,21.255984 12.916688,21.84375 12,21.84375 c -0.916687,0 -1.697797,-0.587766 -1.988281,-1.40625 H 3.5625 c -1.1631562,0 -2.15625,-0.946219 -2.15625,-2.109375 V 3.5625 Z");
+}
+svg path[d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"] {
+	d: path("m 14.695239,1.9999995 c -0.172564,0 -0.345192,0.065287 -0.476856,0.1969323 L 8.8655558,7.5499113 16.449678,15.134249 21.802505,9.7812686 c 0.263327,-0.26329 0.263327,-0.690404 0,-0.953738 L 20.790203,7.8168279 C 20.561354,7.5879722 20.201783,7.553571 19.934142,7.7354508 l -2.127134,1.4452558 1.437076,-2.1418429 c 0.179492,-0.2675152 0.144859,-0.6250542 -0.083,-0.852831 L 16.965593,3.9921086 C 16.762949,3.7894605 16.453901,3.7358929 16.195788,3.8602778 l -0.379206,0.183912 0.18228,-0.4036299 C 16.114073,3.3850021 16.058716,3.0852515 15.860524,2.8870088 L 15.172095,2.1969318 C 15.040454,2.065287 14.867803,1.9999995 14.695239,1.9999995 Z M 7.8695296,8.5459656 6.3201554,10.095384 c -0.1264491,0.126453 -0.1969268,0.298047 -0.1969268,0.47687 0,0.178823 0.070432,0.350462 0.1969268,0.476869 l 1.4696269,1.46967 c 0.2831508,0.283158 0.4212717,0.6744 0.3775785,1.072548 -0.043647,0.397879 -0.264001,0.749537 -0.6021726,0.965131 -4.3184211,2.752831 -4.7209389,3.155335 -4.8531868,3.287631 -0.9493352,0.949318 -0.9493352,2.494468 0,3.443875 0.9502792,0.950307 2.4954758,0.948419 3.443777,0 0.1323379,-0.132296 0.5349645,-0.535005 3.2875377,-4.853324 0.215049,-0.337372 0.5670569,-0.556823 0.9651039,-0.600563 0.399307,-0.04356 0.790042,0.09352 1.072518,0.375962 l 1.469627,1.469669 c 0.263283,0.26329 0.690429,0.26329 0.953712,0 l 1.549374,-1.549419 z M 4.4762048,18.571614 c 0.2439024,0 0.4877049,0.0922 0.6737825,0.278309 0.3722002,0.372165 0.3722002,0.975393 0,1.347604 -0.3722002,0.372211 -0.9754096,0.372211 -1.347565,0 -0.3722,-0.372211 -0.3722,-0.975439 0,-1.347604 0.1861001,-0.186105 0.4298801,-0.278309 0.6737825,-0.278309 z");
+}
