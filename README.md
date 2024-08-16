@@ -32,3 +32,5 @@ Download Pentagram.theme.css and put it in your vencord themes folder.
 ## License
 
 Pentagram is licensed under the <a href="https://mit-license.org/">MIT License</a>.
+
+https://cdn.discordapp.com/attachments/1268659043581558874/1273842861577736193/image.png?ex=66c0161d&is=66bec49d&hm=a83d86e6218c48afcb6a638cf42a3315cda679629908a48113105b6a330488d8&
