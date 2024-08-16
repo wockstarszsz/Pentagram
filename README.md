@@ -6,7 +6,7 @@
 </head>
 <body>
     <div align="center">
-        <img src="https://images.pond5.com/celtic-occult-symbol-magic-pentagram-illustration-231050898_iconl.jpeg" alt="Pentagram Image" style="max-width: 100%; height: auto;">
+        <img src="https://cdn.discordapp.com/attachments/1268659043581558874/1273842861577736193/image.png?ex=66c0161d&is=66bec49d&hm=a83d86e6218c48afcb6a638cf42a3315cda679629908a48113105b6a330488d8&" style="max-width: 100%; height: auto;">
         <br>
         <img src="https://img.shields.io/github/languages/top/wockstarszsz/Pentagram?color=%23000000" alt="Top Language">
         <img src="https://img.shields.io/github/stars/wockstarszsz/Pentagram?color=%23000000&logoColor=%23000000" alt="Stars">
@@ -33,9 +33,5 @@ Download Pentagram.theme.css and put it in your vencord themes folder.
 
 Pentagram is licensed under the <a href="https://mit-license.org/">MIT License</a>.
 
-<body>
-    <div align="center">
-        <img src="https://cdn.discordapp.com/attachments/1268659043581558874/1273842861577736193/image.png?ex=66c0161d&is=66bec49d&hm=a83d86e6218c48afcb6a638cf42a3315cda679629908a48113105b6a330488d8" alt="Pentagram Image" style="max-width: 100%; height: auto;">
-    </div>
-</body>
+
 
